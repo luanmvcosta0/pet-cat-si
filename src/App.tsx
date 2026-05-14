@@ -34,16 +34,7 @@ export default function App() {
       <NestCat />
 
       {/* Tech stack pill */}
-      <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
-        {["React", "TypeScript", "Tailwind CSS", "NestJS Style"].map((tech) => (
-          <span
-            key={tech}
-            className="px-3 py-1 text-xs font-mono rounded border border-[#E0234E]/25 bg-[#E0234E]/8 text-[#E0234E]/80"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
+      <div className="mt-12 flex flex-wrap items-center justify-center gap-3"></div>
     </div>
   );
 }
