@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 12px #E0234E)
+      drop-shadow(0 0 28px rgba(224, 35, 78, 0.5));
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 24px #E0234E)
+      drop-shadow(0 0 55px rgba(224, 35, 78, 0.75));
+  }
+}
+
+@keyframes blink {
+  0%, 88%, 100% { transform: scaleY(1); }
+  92% { transform: scaleY(0.06); }
+  96% { transform: scaleY(1); }
+}
+
+@keyframes tail-sway {
+  0%, 100% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.animate-float {
+  animation: float 3.2s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow-pulse 2.4s ease-in-out infinite;
+}
+
+.animate-blink-left {
+  transform-origin: 170px 182px;
+  animation: blink 4.5s ease-in-out infinite;
+}
+
+.animate-blink-right {
+  transform-origin: 230px 182px;
+  animation: blink 4.5s ease-in-out 0.15s infinite;
+}
+
+.animate-tail {
+  transform-origin: 272px 345px;
+  animation: tail-sway 1.8s ease-in-out infinite;
+}

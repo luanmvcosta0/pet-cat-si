@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(cp *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(code *)",
+      "Read(//mnt/c/Users/luan.costa/Downloads/**)",
+      "Bash(cp /mnt/c/Users/luan.costa/Downloads/nest-logo.png /home/luanmvcosta/projects/personal/pet-cat-college/public/nest-logo.png)"
+    ]
+  }
+}
